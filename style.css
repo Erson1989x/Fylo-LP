@@ -15,6 +15,7 @@
     --dark-blue: #07043B;
     --blue: #2F65F8;
     --grayish-blue: #F8F8FE;
+    --red: #ff4242;
 }
 
 body {
@@ -611,3 +612,51 @@ img {
         justify-content: space-between;
     }
  } 
+
+ /*--- Effects, validations and transitions ---*/
+
+.hero-input:invalid,
+.early-access-input:invalid {
+    border-color: var(--red);
+}
+
+.hero-input:focus:invalid,
+.early-access-input:focus:invalid {
+    outline-color: var(--red);
+}
+
+.hero-input:valid,
+.early-access-input:valid {
+    border-color: var(--color-accent);
+}
+
+.hero-input:invalid:focus::after,
+.early-access-input:invalid:focus::after {
+    content: 'Please enter a valid email address';
+    position: absolute;
+    bottom: -20px;
+    left: 0;
+    color: var(--red);
+    font-size: 0.625rem;
+    font-weight: 700;
+}
+
+.hero-input:focus,
+.early-access-input:focus {
+    outline-color: var(--color-accent);
+}
+
+.hero-btn:hover,
+.early-access-btn:hover {
+    background-color: #6B9BFF;
+    transition: all 0.2s ease;
+}
+
+
+.hero-btn:active,
+.early-access-btn:active {
+transform: translateY(1px);
+}
+
+
+

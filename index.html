@@ -55,7 +55,14 @@
           family, and co-workers.
         </p>
         <form class="hero-form" action="">
-          <input class="hero-input" type="email" placeholder="Enter your email" />
+          <input 
+          class="hero-input" 
+          type="email" 
+          placeholder="Enter your email" 
+          required
+          pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$"
+          title="Please enter a valid email address"
+      />
           <button class="hero-btn">Get Started</button>
         </form>
       </div>
@@ -108,7 +115,14 @@
         </p>
         </div>
         <form class="early-access-form" action="">
-          <input class="early-access-input" type="email" placeholder="Enter your email" />
+          <input 
+          class="early-access-input" 
+          type="email" 
+          placeholder="Enter your email" 
+          required
+          pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$"
+          title="Please enter a valid email address"
+      />
           <button class="early-access-btn">Get Started For Free</button>
         </form>
       </div>
