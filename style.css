@@ -14,7 +14,9 @@
     --white: hsl(0, 0%, 100%);
     --dark-blue: #07043B;
     --blue: #2F65F8;
+    --bluish-blue: #6b9bff;
     --grayish-blue: #F8F8FE;
+    --light-green: #71DFCC;
     --red: #ff4242;
 }
 
@@ -648,7 +650,7 @@ img {
 
 .hero-btn:hover,
 .early-access-btn:hover {
-    background-color: #6B9BFF;
+    background-color: var(--bluish-blue);
     transition: all 0.2s ease;
 }
 
@@ -658,5 +660,38 @@ img {
 transform: translateY(1px);
 }
 
+.nav-links a:hover {
+    color:var(--color-secondary);
+    transition: all 0.2s ease;
+}
+
+.features-link a:hover {
+    color: var(--light-green);
+    transition: all 0.2s ease;
+}
+
+.features-link a:hover img {
+    filter: brightness(1.2);
+    transition: all 0.2s ease;
+}
+
+.footer-links a:hover {
+    color: var(--blue);
+    transition: all 0.2s ease;
+}
+
+.footer-social .footer-icon:hover {
+    cursor: pointer;
+}
+
+.footer-social .footer-icon:hover img {
+    filter: brightness(0) saturate(100%) invert(41%) sepia(83%) saturate(2426%) hue-rotate(216deg) brightness(102%) contrast(98%);
+    transition: all 0.2s ease;
+}
+
+.hero-btn:active,
+.early-access-btn:active {
+    transform: translateY(1px);
+}
 
 
